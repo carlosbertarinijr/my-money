@@ -1,21 +1,16 @@
 import React from 'react'
-import axios from 'axios'
+import useGet from './useGet'
+const url = 'https://mymoney-top.firebaseio.com/movimentacoes/2020-09.json'
 
-// axios
-// .get('https://mymoney-top.firebaseio.com/valor.json')
-// .then(success => {
-//   console.log(success)
-// })
 
-// axios
-// .post('https://mymoney-top.firebaseio.com/valor.json', {outro: 'carlos'})
-// .then(success => {
-//   console.log(success.data)
-// })
 function App() {
+  const data = useGet(url)
+
   return (
     <div>
       <h1>myMoney</h1>
+      {JSON.stringify(data)}
+      {data.loading && <p>Carregando...</p>}
     </div>
   )
 }
