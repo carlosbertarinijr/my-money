@@ -2,7 +2,7 @@ import { useReducer, useEffect } from 'react'
 import axios from 'axios'
 
 const INITIAL_STATE = {
-    lading: true,
+    lading:false,
     data: {}
 }
 
