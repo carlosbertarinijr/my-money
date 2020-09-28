@@ -44,3 +44,8 @@ Consuming data from a Rest API with useState / useEffect and useReducer
 It is the result of the course 'https://reactjs.club.hotmart.com/'
 
 So it's a training demonstration with ReactJs technology.
+
+## Project impediment
+When I needed to implement routine functions in firebase, i was prevented by the current plan. 
+
+Version of Nodejs - 8, is obsolete.
